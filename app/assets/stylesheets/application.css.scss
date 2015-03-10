@@ -1,0 +1,67 @@
+$brand-primary: #6b1c8a;
+$link-color: $brand-primary;
+$link-hover-color: darken($link-color, 15%);
+$font-family-base: 'Ubuntu', sans-serif;
+
+// alerts
+$state-info-bg: fadein($brand-primary);
+$state-info-text: #fff;
+$state-info-border: $brand-primary;
+
+@import "font-awesome";
+@import "twitter/bootstrap";
+
+body {
+	background-color: $brand-primary;
+	background-image:  url('hammer.gif');
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+form {
+	background:rgba(255,255,255,0.8);
+	padding: 20%;
+	border-radius: 15px;
+	moz-border-radius: 15px;
+}
+
+h1, h2 {
+	color: white;
+	font-size: 1.5em
+}
+.navbar-brand{
+ text-indent:-999px;
+ width:202px;
+ height:37px;
+ padding:0;
+ margin:5px 0 0 0;
+ background:url(new_logo2.gif)
+ no-repeat center center;
+}
+
+hr {
+	margin: 0px;
+	border: 0px;
+	color: #aaa;
+	background-color: #aaa;
+	height: 2px;
+}
+table {
+	background:rgba(255,255,255,0.8);
+}
+tr {
+}
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+
+.center{
+  text-align: center;
+}
+
+
