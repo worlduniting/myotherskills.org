@@ -27,3 +27,4 @@ public/
 *.swp
 .vagrant/machines/default/virtualbox/id
 public/system
+.env

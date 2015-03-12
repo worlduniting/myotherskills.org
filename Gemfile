@@ -30,6 +30,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -49,8 +50,8 @@ gem 'paperclip', '~> 3.0'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 
-# Using thin for development server
-gem 'thin', :group => :development
+# Using puma for web server since this is faster on Heroku's Cedar Stack
+gem 'puma'
 
 group :production do
   gem 'pg'
@@ -58,6 +59,7 @@ end
 
 group :development do
 	gem 'factory_girl_rails'
+	gem 'foreman' # For development since heroku already manages this with Procfile
 end
 
 group :doc do

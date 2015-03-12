@@ -27,6 +27,7 @@ Check at [http://localhost:3000](http://localhost:3000)
 * Ruby 2.0.0
 * Imagemagick (For uploading pictures)
 * Vagrant (Optional)
+* This app is configured to run on Heroku's Cedar Stack. More info here https://devcenter.heroku.com/articles/getting-started-with-rails4
 
 
 ## Features
@@ -87,3 +88,37 @@ And its done ! Your vagrant vm now has Ruby 2.0.0 and Rails 4 ready to go.
 ### Everything else:
 
 The Unlicense (aka: public domain)
+
+
+      :postgresql => {
+        :config   => {
+          :listen_addresses => "*",
+          :port             => "5432"
+        },
+        :pg_hba   => [
+          {
+            :type   => "local",
+            :db     => "postgres",
+            :user   => "postgres",
+            :addr   => nil,
+            :method => "trust"
+          },
+          {
+            :type   => "host",
+            :db     => "all",
+            :user   => "all",
+            :addr   => "0.0.0.0/0",
+            :method => "md5"
+          },
+          {
+            :type   => "host",
+            :db     => "all",
+            :user   => "all",
+            :addr   => "::1/0",
+            :method => "md5"
+          }
+        ],
+        :password => {
+          :postgres => "password"
+        }
+      },
