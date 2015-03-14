@@ -28,3 +28,4 @@ public/
 .vagrant/machines/default/virtualbox/id
 public/system
 .env
+initializers/aws.rb

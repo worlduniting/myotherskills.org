@@ -21,9 +21,10 @@ body {
 
 form {
 	background:rgba(255,255,255,0.8);
-	padding: 20%;
+	padding: 10%;
 	border-radius: 15px;
 	moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
 }
 
 h1, h2 {
@@ -48,15 +49,21 @@ hr {
 	height: 2px;
 }
 table {
-	background:rgba(255,255,255,0.8);
+	color: #fff;
+	*border-collapse: collapse; /* IE7 and lower */
+   border-spacing: 0; 
+	padding: 10%;
 }
 tr {
+	line-height: 30px; 
 }
-tr:nth-child(odd) {
-    background-color: #eee;
+td {
+	padding-right: 10px;
 }
-tr:nth-child(even) {
-    background-color: #fff;
+
+.container-main {
+	a, a:visited {color:#ffffff}
+	a:hover {color:#aaaaaa}
 }
 
 

@@ -19,3 +19,12 @@ class User < ActiveRecord::Base
       self.username = self.username.gsub(".","").gsub(/\s+/,"") unless self.username.nil?
     end
 end
+
+class User < AWS::Record::HashModel
+  string_attr :id
+  string_attr :name
+  integer_attr :age
+  string_attr :sex
+  string_attr :city
+  boolean_attr :has_image, :default => false
+end
