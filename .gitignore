@@ -14,8 +14,7 @@
 /log/*.log
 /tmp
 
-# Ignore Vagrant files and Chef packages
-/cookbooks
+# Ignore Vagrant files
 .vagrant/
 
 db/schema.rb
@@ -29,3 +28,4 @@ public/
 public/system
 .env
 initializers/aws.rb
+Icon*

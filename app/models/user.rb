@@ -20,11 +20,11 @@ class User < ActiveRecord::Base
     end
 end
 
-class User < AWS::Record::HashModel
-  string_attr :id
-  string_attr :name
-  integer_attr :age
-  string_attr :sex
-  string_attr :city
-  boolean_attr :has_image, :default => false
-end
+# class User < AWS::Record::HashModel
+#   string_attr :id
+#   string_attr :name
+#   integer_attr :age
+#   string_attr :sex
+#   string_attr :city
+#   boolean_attr :has_image, :default => false
+# end
